@@ -4,30 +4,35 @@ export const AboutMe: GlobalConfig = {
   slug: 'about-me',
   fields: [
     {
-      name: 'naam',
+        name: 'naam',
+        type: 'text',
+        required: true,
+    },
+    {
+        name: 'age',
+        type: 'number',
+        required: true,
+    },
+    {
+      name: 'bio',
       type: 'text',
       required: true,
     },
     {
-      name: 'profilePicture',
-      type: 'upload',
-      relationTo: 'media',
-      required: true,
+        name: 'email',
+        type: 'email',
+        required: true,
     },
     {
-      name: 'profession',
-      type: 'text',
-      required: true,
+        name: 'profilePicture',
+        type: 'upload',
+        relationTo: 'media',
+        required: true,
     },
     {
-      name: 'location',
-      type: 'text',
-      required: true,
-    },
-    {
-      name: 'aboutMeText',
-      type: 'text',
-      required: true,
+        name: 'location',
+        type: 'text',
+        required: true,
     },
   ],
 }

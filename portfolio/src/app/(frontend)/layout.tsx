@@ -13,9 +13,9 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 
   return (
     <html lang="en">
-      <body>
+      <body className="w-screen flex flex-col justify-center items-center overflow-x-hidden">
         <Header />
-        <main>{children}</main>
+        <main className="w-full">{children}</main>
         <Footer />
       </body>
     </html>

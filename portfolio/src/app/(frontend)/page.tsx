@@ -22,6 +22,7 @@ export default async function HomePage() {
   const fileURL = `vscode://file/${fileURLToPath(import.meta.url)}`
 
   return (
-    <div>{aboutMe.naam}</div>
+    <div></div>
+
   )
 }
