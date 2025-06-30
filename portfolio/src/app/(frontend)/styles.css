@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.editorial {
+.waves {
   display: block;
   width: 100%;
   height: 60px;
@@ -13,25 +13,25 @@
   float:left;
 }
 
-.parallax1 > use {
+.wave1 > use {
   animation: move-forever1 10s linear infinite;
   &:nth-child(1) {
     animation-delay: -2s;
   }
 }
-.parallax2 > use {
+.wave2 > use {
   animation: move-forever2 8s linear infinite;
   &:nth-child(1) {
     animation-delay: -2s;
   }
 }
-.parallax3 > use {
+.wave3 > use {
   animation: move-forever3 6s linear infinite;
   &:nth-child(1) {
     animation-delay: -2s;
   }
 }
-.parallax4 > use {
+.wave4 > use {
   animation: move-forever4 4s linear infinite;
   &:nth-child(1) {
     animation-delay: -2s;
@@ -68,4 +68,31 @@
   100% {
     transform: translate(85px, 0%);
   }
+}
+
+.horizontal .content {
+height: 100vh;
+width: 100vw;
+display: grid;
+place-items: center;
+}
+
+.horizontal {
+  display:flex;
+}
+
+.horizontal .content:nth-child(1) {
+ background: #efefef;
+}
+
+.horizontal .content:nth-child(2) {
+ background: #efefef;
+}
+
+.horizontal .content:nth-child(3) {
+ background: #efefef;
+}
+
+.horizontal .content:nth-child(4) {
+ background: #efefef;
 }

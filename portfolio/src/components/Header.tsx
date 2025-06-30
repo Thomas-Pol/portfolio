@@ -50,9 +50,7 @@ export async function Header() {
                 
             
             </div>
-            <svg className="editorial"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
+            <svg className="waves"
                 viewBox="0 24 150 28 "
                 preserveAspectRatio="none">
                 <defs>
@@ -64,16 +62,16 @@ export async function Header() {
                     58 18 88 18
                     v44h-352z" />
                 </defs>
-                <g className="parallax1">
+                <g className="wave1">
                 <use xlinkHref="#gentle-wave" x="50" y="6" fill="#fff" opacity={0.2}/>  
                 </g>
-                 <g className="parallax2">
+                 <g className="wave2">
                 <use xlinkHref="#gentle-wave" x="50" y="9" fill="#fff" opacity={0.5}/>  
                 </g>
-                 <g className="parallax3">
+                 <g className="wave3">
                 <use xlinkHref="#gentle-wave" x="50" y="3" fill="#fff" opacity={0.8}/>  
                 </g>
-                <g className="parallax4">
+                <g className="wave4">
                 <use xlinkHref="#gentle-wave" x="50" y="2" fill="#fff"/>  
                 </g>
                 
