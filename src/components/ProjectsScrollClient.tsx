@@ -27,8 +27,8 @@ export default function ProjectsScrollClient({ projects }: { projects: Project[]
       const gapSize = window.innerWidth < 768 ? 16 : window.innerWidth * 0.15;
       const gapWidth = gapSize * (totalCards - 1);
 
-      // Total scroll accounts for left and right margins
-      const totalScroll = cardWidth * totalCards + gapWidth + sideMargin * 2 - window.innerWidth;
+  // Scroll so the last card is flush with the right margin, no extra space
+  const totalScroll = (cardWidth + gapSize) * (totalCards - 1) + sideMargin - (window.innerWidth - cardWidth - sideMargin);
 
       // Kill old ScrollTriggers
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
@@ -61,7 +61,7 @@ export default function ProjectsScrollClient({ projects }: { projects: Project[]
       {/* Container with cards */}
       <div
         ref={containerRef}
-        className="flex w-max items-center h-screen mx-auto px-4 sm:px-8 gap-4 md:gap-[15vw]"
+        className="flex w-max items-center h-screen ml-6 mr-6 md:ml-[6rem] md:mr-[6rem] gap-4 md:gap-[15vw]"
       >
         {projects.map((project) => (
           <div
