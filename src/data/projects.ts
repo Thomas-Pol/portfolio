@@ -15,7 +15,7 @@ export const projects: Project[] = [
   {
     id: '2',
     projectName: 'Runhaar/monumenten onderhoud',
-    description: 'Een website voor een bedrijf dat monumenten onderhoudt, met informatie over diensten, projecten en contactmogelijkheden.',
+    description: 'Work in progress / Een website voor een bedrijf dat monumenten onderhoudt, met informatie over diensten, projecten en contactmogelijkheden.',
     image: {
       url: '/img/voorbeeld-foto-runhaar.png', // Using existing wave.png as placeholder
       alt: 'Monumenten Onderhoud Preview'

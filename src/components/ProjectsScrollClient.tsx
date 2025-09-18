@@ -61,7 +61,7 @@ export default function ProjectsScrollClient({ projects }: { projects: Project[]
       {/* Container with cards */}
       <div
         ref={containerRef}
-        className="flex w-max items-center h-screen ml-6 mr-6 md:ml-[6rem] md:mr-[6rem] gap-4 md:gap-[15vw]"
+        className="flex w-max items-center h-screen mx-auto px-4 sm:px-8 gap-4 md:gap-[15vw]"
       >
         {projects.map((project) => (
           <div
@@ -84,7 +84,7 @@ export default function ProjectsScrollClient({ projects }: { projects: Project[]
                 </div>
               )}
 
-              <h3 className="text-3xl font-bold text-[#E8E8E8] mb-4">{project.projectName}</h3>
+              <h3 className="text-2xl font-bold text-[#E8E8E8] mb-4">{project.projectName}</h3>
               <p className="min-h-[20vh] text-[#E8E8E8] opacity-80 mb-6 text-lg">{project.description}</p>
               
             </div>
