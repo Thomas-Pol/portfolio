@@ -3,35 +3,35 @@ import { Project } from '../types';
 export const projects: Project[] = [
   {
     id: '1',
-    projectName: 'Portfolio Website',
-    description: 'A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations with GSAP and responsive design.',
+    projectName: '❤️U Festival',
+    description: 'Een festival website/app voor de telefoon met informatie over het evenement, artiesten, tickets en meer.',
     image: {
-      url: '/img/wave.png', // Using existing wave.png as placeholder
-      alt: 'Portfolio Website Preview'
+      url: '/img/love_u_festival.png', // Using existing love_u_festival.png as placeholder
+      alt: '❤️U Festival Preview'
     },
-    linkGitHub: 'https://github.com/yourusername/portfolio',
-    linkLive: 'https://yourportfolio.com'
+    linkGitHub: 'https://github.com/Thomas-Pol/-U-festival',
+    linkLive: 'https://u230609.gluwebsite.nl/u_festival/'
   },
   {
     id: '2',
-    projectName: 'E-commerce Platform',
-    description: 'Full-stack e-commerce solution with user authentication, payment integration, and admin dashboard.',
+    projectName: 'Runhaar/monumenten onderhoud',
+    description: 'Een website voor een bedrijf dat monumenten onderhoudt, met informatie over diensten, projecten en contactmogelijkheden.',
     image: {
-      url: '/img/wave.png', // Using existing wave.png as placeholder
-      alt: 'E-commerce Platform Preview'
+      url: '/img/voorbeeld-foto-runhaar.png', // Using existing wave.png as placeholder
+      alt: 'Monumenten Onderhoud Preview'
     },
-    linkGitHub: 'https://github.com/yourusername/ecommerce',
-    linkLive: 'https://yourecommerce.com'
+    linkGitHub: 'heeft geen github',
+    linkLive: 'https://lemonchiffon-swallow-707223.hostingersite.com/'
   },
   {
     id: '3',
-    projectName: 'Task Management App',
-    description: 'Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+    projectName: 'Virtual assitant informatie website',
+    description: 'Een website voor een virtuele assistent met informatie over diensten, tarieven en contactmogelijkheden.',
     image: {
-      url: '/img/wave.png', // Using existing wave.png as placeholder
-      alt: 'Task Management App Preview'
+      url: '/img/vafloor-1.png', // Using existing wave.png as placeholder
+      alt: 'Virtual Assistant Website Preview'
     },
-    linkGitHub: 'https://github.com/yourusername/taskapp',
-    linkLive: 'https://yourtaskapp.com'
+    linkGitHub: 'https://github.com/Thomas-Pol/vaFloor',
+    linkLive: 'https://www.vafloor.nl/'
   }
 ];
