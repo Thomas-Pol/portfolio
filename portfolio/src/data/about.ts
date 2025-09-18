@@ -7,7 +7,7 @@ export const aboutMe: AboutMe = {
   profession: 'Fullstack Developer',
   email: 'your.email@example.com',
   profilePicture: {
-    url: '/img/wave.png', // Using existing wave.png as placeholder
+    url: '/img/aa51605b-2659-4a55-8ddc-0e1b0f552816.jpg', // Using existing wave.png as placeholder
     alt: 'Profile Picture'
   },
   location: 'Netherlands'
