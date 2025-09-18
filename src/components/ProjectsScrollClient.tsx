@@ -86,7 +86,7 @@ export default function ProjectsScrollClient({ projects }: { projects: Project[]
 
               <h3 className="text-3xl font-bold text-[#E8E8E8] mb-4">{project.projectName}</h3>
               <p className="min-h-[20vh] text-[#E8E8E8] opacity-80 mb-6 text-lg">{project.description}</p>
-              <a href="" className="text-[#E8E8E8]">Meer informatie --&gt;</a>
+              
             </div>
 
             <div className="flex gap-4">
