@@ -46,7 +46,7 @@ export default async function HomePage() {
       {/* Afbeelding */}
       <div className="flex justify-center md:justify-center mt-8 md:mt-0">
         <img 
-          className="w-48 sm:w-64 md:w-80 rounded-lg object-cover"
+          className="w-48 sm:w-64 md:w-full rounded-lg object-cover"
           src={aboutMe.profilePicture.url} 
           alt={aboutMe.profilePicture.alt} 
         />

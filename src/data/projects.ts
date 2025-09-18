@@ -33,5 +33,16 @@ export const projects: Project[] = [
     },
     linkGitHub: 'https://github.com/Thomas-Pol/vaFloor',
     linkLive: 'https://www.vafloor.nl/'
+  },
+  {
+    id: '4',
+    projectName: 'AnnexBios',
+    description: 'Een project waar we een bioscoop website moesten maken waar mensen kaartjes konden reserveren om naar de film te gaan.',
+    image: {
+      url: '/img/annexBios.png', // Using existing wave.png as placeholder
+      alt: 'AnnexBios Preview'
+    },
+    linkGitHub: 'https://github.com/David-Schoots/AnnexBios',
+    linkLive: 'https://annexbiosbilthoven.gluwebsite.nl/'
   }
 ];
