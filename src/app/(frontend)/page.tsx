@@ -9,20 +9,38 @@ import ProjectsScroll from "@/components/ProjectsScroll";
 export default async function HomePage() {
   return (
     <div>
-      <section id="about" className="w-screen min-h-screen bg-[#E8E8E8] text-[#0f172a] py-20">
-        <section id="about" className="w-full min-h-screen bg-[#E8E8E8] text-[#0f172a] py-20">
+      <section id="about" className="w-full min-h-screen bg-[#E8E8E8] text-[#0f172a] py-20">
   <div className="max-w-6xl mx-auto px-4 sm:px-8">
     <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
       
       {/* Tekst */}
       <div>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">About me</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">About Me - <strong>Full Stack Web Developer</strong></h2>
         <p className="text-base sm:text-lg opacity-90 mb-4 sm:mb-6">
           {aboutMe.bio}
         </p>
         <p className="text-base sm:text-lg opacity-90 mb-6 sm:mb-8">
-          {aboutMe.profession}
+          <strong>{aboutMe.profession}</strong> - Creating beautiful and functional web applications
         </p>
+        <h3 className="text-xl font-bold mb-4">Technical Skills</h3>
+        <ul className="mb-6 space-y-2">
+          <li className="flex items-start">
+            <span className="mr-2">•</span>
+            <span><strong>Frontend Development:</strong> React, Next.js, TypeScript</span>
+          </li>
+          <li className="flex items-start">
+            <span className="mr-2">•</span>
+            <span><strong>Styling & Animation:</strong> Tailwind CSS, GSAP</span>
+          </li>
+          <li className="flex items-start">
+            <span className="mr-2">•</span>
+            <span><strong>Backend Development:</strong> Node.js, Laravel, PHP</span>
+          </li>
+          <li className="flex items-start">
+            <span className="mr-2">•</span>
+            <span><strong>Development Tools:</strong> Git, VS Code, Figma</span>
+          </li>
+        </ul>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 text-blue-200">
           <div className="p-4 bg-[#0f172a] bg-opacity-10 rounded-lg">
             <h4 className="font-semibold mb-1">Frontend</h4>
@@ -48,15 +66,16 @@ export default async function HomePage() {
         <img 
           className="w-48 sm:w-64 md:w-full rounded-lg object-cover"
           src={aboutMe.profilePicture.url} 
-          alt={aboutMe.profilePicture.alt} 
+          alt={aboutMe.profilePicture.alt}
+          width="600"
+          height="600"
+          loading="eager"
         />
       </div>
 
     </div>
   </div>
 </section>
-
-      </section>
 
       <div id="projects">
         <ProjectsScroll />

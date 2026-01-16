@@ -63,9 +63,10 @@ export default function ProjectsScrollClient({ projects }: { projects: Project[]
         ref={containerRef}
         className="flex w-max items-center h-screen ml-6 mr-6 md:ml-[6rem] md:mr-[6rem] gap-4 md:gap-[15vw]"
       >
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <div
             key={project.id}
+            id={`project-${project.id}`}
             className="card w-[80vw] sm:w-[60vw] md:w-[44vw] max-w-xs sm:max-w-sm md:max-w-xl h-auto flex flex-col justify-between backdrop-blur-sm bg-[#0f172a] p-6 sm:p-8 rounded-2xl border border-blue-400/30 hover:bg-[#0f172a]/90 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20"
           >
             {/* Content */}
@@ -76,6 +77,9 @@ export default function ProjectsScrollClient({ projects }: { projects: Project[]
                     src={project.image.url}
                     alt={project.image.alt}
                     className="w-full h-full object-cover rounded-lg"
+                    width="600"
+                    height="160"
+                    loading={index === 0 ? 'eager' : 'lazy'}
                   />
                 </div>
               ) : (
@@ -84,7 +88,7 @@ export default function ProjectsScrollClient({ projects }: { projects: Project[]
                 </div>
               )}
 
-              <h3 className="text-2xl min-h-[7vh] font-bold text-[#E8E8E8] mb-4">{project.projectName}</h3>
+              <h3 className="text-2xl min-h-[7vh] font-bold text-[#E8E8E8] mb-4"><strong>{project.projectName}</strong></h3>
               <p className="min-h-[20vh] text-[#E8E8E8] opacity-80 mb-6 text-lg">{project.description}</p>
               
             </div>
