@@ -15,13 +15,13 @@ export function Footer() {
                 {/* hoofd container contact */}
                 <div className="text-center mb-20">
                     <h2 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-to-r from-white via-blue-200 to-blue-400 bg-clip-text text-transparent">
-                        Laten We
+                        Laten we
                         <br />
-                        <span className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-blue-400 via-blue-300 to-white bg-clip-text text-transparent">Samenwerken</span>
+                        <span className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-blue-400 via-blue-300 to-white bg-clip-text text-transparent">samenwerken</span>
                     </h2>
                     <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto rounded-full mb-8"></div>
                     <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
-                        <strong>Heeft u een project in gedachten?</strong> Ik hoor het graag.
+                        Heeft u een project in gedachten? Ik hoor het graag.
 Laten we bespreken hoe we uw ideeën tot leven kunnen brengen met geavanceerde technologie en creatieve oplossingen.
                     </p>
                 </div>
