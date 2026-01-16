@@ -45,7 +45,7 @@ export function Header() {
       Welkom
     </h1>
     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-blue-400 via-blue-300 to-white bg-clip-text text-transparent">
-      op de portfolio van Thomas Pol
+      Op de Portfolio van Thomas Pol
     </h2>
     <a href="#projects" className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-[#E8E8E8] text-[#E8E8E8] rounded-lg font-semibold hover:bg-[#E8E8E8] hover:text-[#0E100F] transition-all duration-300 inline-block">
       Bekijk mijn werk

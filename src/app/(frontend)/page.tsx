@@ -9,14 +9,13 @@ import ProjectsScroll from "@/components/ProjectsScroll";
 export default async function HomePage() {
   return (
     <div>
-      <section id="about" className="w-screen min-h-screen bg-[#E8E8E8] text-[#0f172a] py-20">
-        <section id="about" className="w-full min-h-screen bg-[#E8E8E8] text-[#0f172a] py-20">
+      <section id="about" className="w-full min-h-screen bg-[#E8E8E8] text-[#0f172a] py-20">
   <div className="max-w-6xl mx-auto px-4 sm:px-8">
     <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
       
       {/* Tekst */}
       <div>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">About me</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8">About Me</h2>
         <p className="text-base sm:text-lg opacity-90 mb-4 sm:mb-6">
           {aboutMe.bio}
         </p>
@@ -48,15 +47,16 @@ export default async function HomePage() {
         <img 
           className="w-48 sm:w-64 md:w-full rounded-lg object-cover"
           src={aboutMe.profilePicture.url} 
-          alt={aboutMe.profilePicture.alt} 
+          alt={aboutMe.profilePicture.alt}
+          width={400}
+          height={400}
+          loading="lazy" 
         />
       </div>
 
     </div>
   </div>
 </section>
-
-      </section>
 
       <div id="projects">
         <ProjectsScroll />
